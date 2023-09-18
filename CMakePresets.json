@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "arm-cross",
+      "displayName": "Arm GCC cross compiler",
+      "description": "The CMake preset for configuring the cross compiler",
+      "binaryDir": "build/MOP",
+      "generator": "Unix Makefiles",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "arm-none-eabi-gcc",
+        "CMAKE_CXX_COMPILER": "arm-none-eabi-g++",
+        "CMAKE_OBJCOPY": "arm-none-eabi-objcopy",
+        "CMAKE_OBJDUMP": "arm-none-eabi-objdump",
+        "CMAKE_TRY_COMPILE_TARGET_TYPE": "STATIC_LIBRARY",
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      }
+    }
+  ]
+}
